@@ -1,6 +1,6 @@
 .container {
-  max-width: 1280px;
-  margin-inline: 163px;
+  width: 100vw;
+  padding-inline: 163px;
 }
 
 .name-red {
@@ -25,3 +25,4 @@
   font: var(--text-sm);
   color: var(--gray-400);
 }
+

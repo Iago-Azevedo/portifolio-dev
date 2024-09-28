@@ -5,11 +5,24 @@
 }
 
 body {
-  color: var(--gray-600);
-  background-image: url(/assets/images/background/Background_Intro.png);
-  background-repeat: no-repeat;
+  display: grid;
+  grid-template-areas:
+    "header header header "
+    "projects projects projects "
+    "services  services services"
+    "footer footer footer ";
+  grid-template-columns: repeat(3, 1fr);
+  background-color: var(--gray-200);
+}
+
+.header {
+  grid-area: header;
+  background: url(../assets/images/background/Background_Intro.png) no-repeat;
   background-size: cover;
-  background-color: var(--gray-300);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .info {
@@ -25,6 +38,7 @@ body {
     h1 {
       font: var(--title-lg);
       padding-block: 8px 20px;
+      color: var(--gray-600);
     }
   }
 }
@@ -55,6 +69,7 @@ body {
   justify-content: center;
   font: var(--text-md);
   gap: 16px;
+  margin-top: 80px;
 
   figure {
     display: flex;
@@ -64,5 +79,10 @@ body {
     border-radius: 999px;
     padding: 8px 16px;
     gap: 8px;
+    color: var(--gray-500);
   }
+}
+
+.double-down {
+  margin-top: 56px;
 }
