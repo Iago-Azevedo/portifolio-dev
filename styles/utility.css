@@ -1,5 +1,6 @@
 .container {
   width: 100vw;
+  height: auto;
   padding-inline: 163px;
 }
 
@@ -9,7 +10,6 @@
 
 .subtile {
   font: var(--subtitle);
-  color: var(--gray-500);
 }
 
 .title-md {
@@ -21,8 +21,9 @@
   font: var(--text-sm);
   color: var(--gray-400);
 }
+
 .text-sm {
   font: var(--text-sm);
-  color: var(--gray-400);
+  color: var(--gray-500);
 }
 
