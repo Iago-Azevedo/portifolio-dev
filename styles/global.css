@@ -96,9 +96,6 @@ main .projects {
 }
 
 main .about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-block: 72px 56px;
 }
 
@@ -129,6 +126,11 @@ main .grids {
       font: var(--text-sm);
       color: var(--gray-500);
     }
+
+    &:hover {
+      outline: 1.5px solid var(--gray-400);
+      cursor: pointer;
+    }
   }
 }
 
@@ -137,9 +139,6 @@ main .grids {
   background-color: var(--gray-100);
 
   & .about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding-block: 88px 56px;
   }
 
@@ -164,6 +163,63 @@ main .grids {
       & p {
         font: var(--text-sm);
         color: var(--gray-500);
+      }
+    }
+  }
+}
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../assets/images/background/Thumbnail_Project-02.png);
+  background-size: cover;
+
+  & .about {
+    padding-block: 128px 48px;
+
+    & .subtile{
+      color: var(--purple);
+    }
+
+    & p{
+      font: var(--text-md);
+      color: var(--gray-500);
+    }
+  }
+
+  & ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 200px;
+
+    & li {
+      display: flex;
+      border-radius: 8px;
+      justify-content: space-between;
+      background-color: var(--gray-300);
+      width: 400px;
+      height: 68px;
+      padding-inline: 20px;
+
+      & .itens {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+
+        & span {
+          font: var(--text-md);
+          color: var(--gray-500);
+        }
+      }
+
+      &:hover {
+        border: 2px solid var(--blue);
+        cursor: pointer;
+        transition: .2s;
       }
     }
   }
